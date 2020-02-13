@@ -14,5 +14,7 @@ export default {
 		}
 	},
 	external: ['@angular/core', '@angular/forms', 'brace', 'brace/theme/monokai'],
-	plugins: [angular(), typescript()]
+	plugins: [angular(), typescript()],
+	moduleName: 'ng2-ace-editor-a9',
+
 };

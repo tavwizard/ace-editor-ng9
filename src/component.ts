@@ -147,7 +147,7 @@ export class AceEditorComponent implements ControlValueAccessor, OnInit, OnDestr
     registerOnChange(fn: any) {
         this._onChange = fn;
     }
-    
+
     registerOnTouched(fn: any) {}
 
     get text() {
