@@ -37,7 +37,6 @@ export declare class AceEditorComponent implements ControlValueAccessor, OnInit,
     writeValue(value: any): void;
     private _onChange;
     registerOnChange(fn: any): void;
-    private _onTouched;
     registerOnTouched(fn: any): void;
     get text(): string;
     set text(text: string);

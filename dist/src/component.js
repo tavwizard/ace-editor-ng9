@@ -114,9 +114,7 @@ export class AceEditorComponent {
     registerOnChange(fn) {
         this._onChange = fn;
     }
-    registerOnTouched(fn) {
-        this._onTouched = fn;
-    }
+    registerOnTouched(fn) { }
     get text() {
         return this._text;
     }
