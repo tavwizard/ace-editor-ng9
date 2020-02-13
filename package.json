@@ -1,4 +1,9 @@
 {
+  "name": "ng2-ace-editor-a9",
+  "version": "9.0.0",
+  "description": "A fork from ng2-ace-editor updated to work with Angular 9",
+  "homepage": "https://github.com/martinpagesaal/ng2-ace-editor-a9",
+  "license": "MIT",
   "scripts": {
     "transpile": "ngc",
     "package": "rollup -c",
