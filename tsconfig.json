@@ -2,11 +2,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,
+    "downlevelIteration": true,
     "stripInternal": true,
     "experimentalDecorators": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "paths": {
       "@angular/core": [
@@ -20,7 +21,7 @@
     "outDir": "dist",
     "sourceMap": true,
     "inlineSources": true,
-    "target": "es5",
+    "target": "es2015",
     "skipLibCheck": true,
     "lib": [
       "es2015",
