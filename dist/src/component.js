@@ -18,8 +18,6 @@ export class AceEditorComponent {
         this._text = "";
         this._onChange = (_) => {
         };
-        this._onTouched = () => {
-        };
         let el = elementRef.nativeElement;
         this.zone.runOutsideAngular(() => {
             this._editor = ace['edit'](el);
