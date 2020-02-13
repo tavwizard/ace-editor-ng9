@@ -9,7 +9,7 @@ export default {
 		file: 'dist/ng2-ace-editor-a9.umd.js',
 		format: 'umd',
 		name: 'ng2-ace-editor-a9',
-	   	sourcemap: false,
+	   	sourcemap: true,
 	   	globals: {
         	'@angular/core': 'ng.core',
             '@angular/forms': 'ng.forms'
