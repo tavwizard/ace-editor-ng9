@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('brace'), require('brace/theme/monokai'), require('@angular/forms')) :
     typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'brace', 'brace/theme/monokai', '@angular/forms'], factory) :
-    (global = global || self, factory((global.ng = global.ng || {}, global.ng.ng2aceeditor = {}), global.ng.core, null, null, global.ng.forms));
+    (global = global || self, factory(global['ng2-ace-editor-a9'] = {}, global.ng.core, null, null, global.ng.forms));
 }(this, (function (exports, i0, brace, monokai, forms) { 'use strict';
 
     class AceEditorDirective {
