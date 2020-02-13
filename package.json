@@ -21,6 +21,7 @@
     "@angular/forms": "^9.0.1",
     "@angular/platform-browser": "^9.0.1",
     "codelyzer": "^5.2.1",
+    "rimraf": "^3.0.2",
     "rollup": "^1.31.0",
     "rollup-plugin-angular": "^0.5.3",
     "rollup-plugin-typescript2": "^0.26.0",
@@ -31,8 +32,5 @@
   },
   "files": [
     "dist/"
-  ],
-  "dependencies": {
-    "rimraf": "^3.0.2"
-  }
+  ]
 }
