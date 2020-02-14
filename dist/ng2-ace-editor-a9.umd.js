@@ -1,8 +1,8 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('brace'), require('brace/theme/monokai'), require('@angular/forms')) :
     typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'brace', 'brace/theme/monokai', '@angular/forms'], factory) :
-    (global = global || self, factory(global['ng2-ace-editor-a9'] = {}, global.ng.core, null, null, global.ng.forms));
-}(this, (function (exports, i0, brace, monokai, forms) { 'use strict';
+    (global = global || self, factory(global['ng2-ace-editor-a9'] = {}, global.ng.core, global.ace, null, global.ng.forms));
+}(this, (function (exports, i0, ace, monokai, forms) { 'use strict';
 
     class AceEditorDirective {
         constructor(elementRef, zone) {
@@ -18,7 +18,7 @@
             this._text = "";
             let el = elementRef.nativeElement;
             this.zone.runOutsideAngular(() => {
-                this.editor = ace["edit"](el);
+                this.editor = ace.edit(el);
             });
             this.editor.$blockScrolling = Infinity;
         }
@@ -124,6 +124,7 @@
     AceEditorDirective.ɵfac = function AceEditorDirective_Factory(t) { return new (t || AceEditorDirective)(i0["ɵɵdirectiveInject"](i0.ElementRef), i0["ɵɵdirectiveInject"](i0.NgZone)); };
     AceEditorDirective.ɵdir = i0["ɵɵdefineDirective"]({ type: AceEditorDirective, selectors: [["", "ace-editor", ""]], inputs: { options: "options", readOnly: "readOnly", theme: "theme", mode: "mode", text: "text", autoUpdateContent: "autoUpdateContent", durationBeforeCallback: "durationBeforeCallback" }, outputs: { textChanged: "textChanged", textChange: "textChange" } });
 
+    // import "brace/theme/monokai";
     class AceEditorComponent {
         constructor(elementRef, zone) {
             this.zone = zone;
@@ -141,7 +142,7 @@
             };
             let el = elementRef.nativeElement;
             this.zone.runOutsideAngular(() => {
-                this._editor = ace['edit'](el);
+                this._editor = ace.edit(el);
             });
             this._editor.$blockScrolling = Infinity;
         }

@@ -1,9 +1,7 @@
 import { Directive, EventEmitter, Output, ElementRef, Input, OnInit, OnDestroy, NgZone } from "@angular/core";
-import "brace";
+import * as ace from 'brace';
 import "brace/theme/monokai";
 
-
-declare var ace: any;
 
 @Directive({
     selector: '[ace-editor]'
@@ -25,7 +23,7 @@ export class AceEditorDirective implements OnInit, OnDestroy {
     constructor(elementRef: ElementRef, private zone: NgZone) {
         let el = elementRef.nativeElement;
         this.zone.runOutsideAngular(() => {
-            this.editor = ace["edit"](el);
+            this.editor = ace.edit(el);
         });
         this.editor.$blockScrolling = Infinity;
     }
