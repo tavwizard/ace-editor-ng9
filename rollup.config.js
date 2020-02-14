@@ -6,9 +6,9 @@ import angular from "rollup-plugin-angular";
 export default {
 	input: 'dist/index.js',
 	output: {
-		file: 'dist/ng2-ace-editor-ivy.umd.js',
+		file: 'dist/ngx-ace-editor-wrapper.umd.js',
 		format: 'umd',
-		name: 'ng2-ace-editor-ivy',
+		name: 'ngx-ace-editor-wrapper',
 	   	sourcemap: true,
 	   	globals: {
         	'@angular/core': 'ng.core',

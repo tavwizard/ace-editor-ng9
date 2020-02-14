@@ -1,16 +1,16 @@
-# ng2-ace-editor-ivy
+# ngx-ace-editor-wrapper
 
-[![npm version](https://badge.fury.io/js/ng2-ace-editor-ivy.svg)](https://www.npmjs.com/package/ng2-ace-editor-ivy) 
+[![npm version](https://badge.fury.io/js/ngx-ace-editor-wrapper.svg)](https://www.npmjs.com/package/ngx-ace-editor-wrapper) 
 Ace editor integration with typescript for angular 5.  
-**To use Angular 4 install version 0.3.1 (npm i -S ng2-ace-editor-ivy@0.3.1).**
+**To use Angular 4 install version 0.3.1 (npm i -S ngx-ace-editor-wrapper@0.3.1).**
 
 # Install
-`npm i -S ng2-ace-editor-ivy`
+`npm i -S ngx-ace-editor-wrapper`
 
 ##### Load the module for your app:
 
 ```javascript
-import { AceEditorModule } from 'ng2-ace-editor-ivy';
+import { AceEditorModule } from 'ngx-ace-editor-wrapper';
 
 @NgModule({
   ...
@@ -26,7 +26,7 @@ import { AceEditorModule } from 'ng2-ace-editor-ivy';
 > Minimal
 
 ```js
-//import { AceEditorModule } from 'ng2-ace-editor-ivy';
+//import { AceEditorModule } from 'ngx-ace-editor-wrapper';
 
 import { Component } from '@angular/core';
 

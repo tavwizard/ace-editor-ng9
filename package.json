@@ -1,8 +1,8 @@
 {
-  "name": "ng2-ace-editor-ivy",
+  "name": "ngx-ace-editor-wrapper",
   "version": "9.0.0",
   "description": "A fork from ng2-ace-editor updated to work with Angular 9",
-  "homepage": "https://github.com/martinpagesaal/ng2-ace-editor-ivy",
+  "homepage": "https://github.com/martinpagesaal/ngx-ace-editor-wrapper",
   "license": "MIT",
   "js:next": "dist/index.js",
   "module": "dist/index.js",
@@ -12,7 +12,7 @@
     "clean": "npm run clean:typescript && rimraf node_modules && npm cache clean",
     "clean:typescript": "rimraf dist",
     "rollup": "rollup -c rollup.config.js",
-    "minify": "uglifyjs dist/bundles/ng2-ace-editor-ivy.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng2-ace-editor-ivy.umd.min.js",
+    "minify": "uglifyjs dist/bundles/ngx-ace-editor-wrapper.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-ace-editor-wrapper.umd.min.js",
     "build": "npm run clean:typescript && npm run transpile && npm run rollup"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinpagesaal/ng2-ace-editor-ivy.git"
+    "url": "git+https://github.com/martinpagesaal/ngx-ace-editor-wrapper.git"
   },
   "keywords": [
     "ace",
@@ -57,6 +57,6 @@
   ],
   "author": "Martin Page",
   "bugs": {
-    "url": "https://github.com/martinpagesaal/ng2-ace-editor-ivy/issues"
+    "url": "https://github.com/martinpagesaal/ngx-ace-editor-wrapper/issues"
   }
 }
