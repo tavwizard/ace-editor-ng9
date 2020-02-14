@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Output, ElementRef, Input, forwardRef, OnInit, OnDestroy, NgZone } from "@angular/core";
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from "@angular/forms";
-import * as ace from 'brace';
-// import "brace/theme/monokai";
+import "brace";
+import "brace/theme/monokai";
 
+declare var ace: any;
 
 @Component({
     selector: 'ace-editor',
@@ -146,7 +147,7 @@ export class AceEditorComponent implements ControlValueAccessor, OnInit, OnDestr
     registerOnChange(fn: any) {
         this._onChange = fn;
     }
-
+    
     registerOnTouched(fn: any) {}
 
     get text() {

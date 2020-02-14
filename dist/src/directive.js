@@ -1,5 +1,5 @@
 import { Directive, EventEmitter, Output, Input } from "@angular/core";
-import * as ace from 'brace';
+import "brace";
 import "brace/theme/monokai";
 import * as i0 from "@angular/core";
 export class AceEditorDirective {
@@ -16,7 +16,7 @@ export class AceEditorDirective {
         this._text = "";
         let el = elementRef.nativeElement;
         this.zone.runOutsideAngular(() => {
-            this.editor = ace.edit(el);
+            this.editor = ace["edit"](el);
         });
         this.editor.$blockScrolling = Infinity;
     }

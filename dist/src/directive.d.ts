@@ -1,4 +1,5 @@
 import { EventEmitter, ElementRef, OnInit, OnDestroy, NgZone } from "@angular/core";
+import "brace";
 import "brace/theme/monokai";
 import * as i0 from "@angular/core";
 export declare class AceEditorDirective implements OnInit, OnDestroy {

@@ -1,5 +1,7 @@
 import { EventEmitter, ElementRef, OnInit, OnDestroy, NgZone } from "@angular/core";
 import { ControlValueAccessor } from "@angular/forms";
+import "brace";
+import "brace/theme/monokai";
 import * as i0 from "@angular/core";
 export declare class AceEditorComponent implements ControlValueAccessor, OnInit, OnDestroy {
     private zone;

@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Output, Input, forwardRef } from "@angular/core";
 import { NG_VALUE_ACCESSOR } from "@angular/forms";
-import * as ace from 'brace';
+import "brace";
+import "brace/theme/monokai";
 import * as i0 from "@angular/core";
-// import "brace/theme/monokai";
 export class AceEditorComponent {
     constructor(elementRef, zone) {
         this.zone = zone;
