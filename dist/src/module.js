@@ -1,28 +1,27 @@
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 import { NgModule } from "@angular/core";
 import { AceEditorComponent } from "./component";
 import { AceEditorDirective } from "./directive";
-var list = [
+import * as i0 from "@angular/core";
+const list = [
     AceEditorComponent,
     AceEditorDirective
 ];
-var AceEditorModule = /** @class */ (function () {
-    function AceEditorModule() {
-    }
-    AceEditorModule = __decorate([
-        NgModule({
-            declarations: list.slice(),
-            imports: [],
-            providers: [],
-            exports: list
-        })
-    ], AceEditorModule);
-    return AceEditorModule;
-}());
-export { AceEditorModule };
+export class AceEditorModule {
+}
+AceEditorModule.ɵmod = i0.ɵɵdefineNgModule({ type: AceEditorModule });
+AceEditorModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AceEditorModule_Factory(t) { return new (t || AceEditorModule)(); }, providers: [], imports: [[]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(AceEditorModule, { declarations: [AceEditorComponent,
+        AceEditorDirective], exports: [AceEditorComponent,
+        AceEditorDirective] }); })();
+/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(AceEditorModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [
+                    ...list
+                ],
+                imports: [],
+                providers: [],
+                exports: list
+            }]
+    }], null, null); })();
 //# sourceMappingURL=module.js.map

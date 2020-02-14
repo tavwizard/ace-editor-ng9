@@ -1,10 +1,11 @@
 import { EventEmitter, ElementRef, OnInit, OnDestroy, NgZone } from "@angular/core";
 import "brace";
 import "brace/theme/monokai";
+import * as i0 from "@angular/core";
 export declare class AceEditorDirective implements OnInit, OnDestroy {
     private zone;
-    textChanged: EventEmitter<{}>;
-    textChange: EventEmitter<{}>;
+    textChanged: EventEmitter<any>;
+    textChange: EventEmitter<any>;
     _options: any;
     _readOnly: boolean;
     _theme: string;
@@ -21,15 +22,18 @@ export declare class AceEditorDirective implements OnInit, OnDestroy {
     init(): void;
     initEvents(): void;
     updateText(): void;
-    options: any;
-    readOnly: any;
-    theme: any;
-    mode: any;
+    set options(options: any);
+    set readOnly(readOnly: any);
+    set theme(theme: any);
+    set mode(mode: any);
     setMode(mode: any): void;
-    text: string;
+    get text(): string;
+    set text(text: string);
     setText(text: any): void;
-    autoUpdateContent: any;
-    durationBeforeCallback: number;
+    set autoUpdateContent(status: any);
+    set durationBeforeCallback(num: number);
     setDurationBeforeCallback(num: number): void;
-    readonly aceEditor: any;
+    get aceEditor(): any;
+    static ɵfac: i0.ɵɵFactoryDef<AceEditorDirective>;
+    static ɵdir: i0.ɵɵDirectiveDefWithMeta<AceEditorDirective, "[ace-editor]", never, { "options": "options"; "readOnly": "readOnly"; "theme": "theme"; "mode": "mode"; "text": "text"; "autoUpdateContent": "autoUpdateContent"; "durationBeforeCallback": "durationBeforeCallback"; }, { "textChanged": "textChanged"; "textChange": "textChange"; }, never>;
 }
