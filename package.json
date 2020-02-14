@@ -1,6 +1,6 @@
 {
   "name": "ngx-ace-editor-wrapper",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "A fork from ng2-ace-editor updated to work with Angular 9",
   "homepage": "https://github.com/martinpagesaal/ngx-ace-editor-wrapper",
   "license": "MIT",
