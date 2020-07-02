@@ -7,31 +7,29 @@
     "experimentalDecorators": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
+    "importHelpers": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "paths": {
-      "@angular/core": [
-        "node_modules/@angular/core"
-      ],
-      "@angular/forms": [
-        "node_modules/@angular/forms"
-      ]
-    },
     "rootDir": ".",
     "outDir": "dist",
-    "sourceMap": true,
-    "inlineSources": true,
+    "sourceMap": false,
+    "inlineSources": false,
     "target": "es2015",
     "skipLibCheck": true,
+    "noEmitHelpers": true,
     "lib": [
       "es2015",
       "dom"
     ]
   },
-  "files": [
-    "index.ts"
+  "include": [
+    "src/**/*"
   ],
   "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true,
+    "fullTemplateTypeCheck": false,
+    "strictInjectionParameters": true,
+    "enableIvy": false
   }
 }

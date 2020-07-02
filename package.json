@@ -1,62 +1,58 @@
 {
-  "name": "ngx-ace-editor-wrapper",
-  "version": "9.0.1",
+  "name": "ace-editor-ng9",
+  "version": "9.1.11",
   "description": "A fork from ng2-ace-editor updated to work with Angular 9",
-  "homepage": "https://github.com/martinpagesaal/ngx-ace-editor-wrapper",
+  "homepage": "https://github.com/tavwizard/ace-editor-ng9",
   "license": "MIT",
-  "js:next": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
-    "transpile": "ngc",
-    "clean": "npm run clean:typescript && rimraf node_modules && npm cache clean",
-    "clean:typescript": "rimraf dist",
-    "rollup": "rollup -c rollup.config.js",
-    "minify": "uglifyjs dist/bundles/ngx-ace-editor-wrapper.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-ace-editor-wrapper.umd.min.js",
-    "build": "npm run clean:typescript && npm run transpile && npm run rollup"
+    "clean": "rimraf dist",
+    "build": "ng-packagr -c tsconfig.json"
   },
+  "main": "dist/bundles/ace-editor-ng9.umd.js",
+  "module": "dist/fesm5/ace-editor-ng9.js",
+  "es2015": "dist/fesm2015/ace-editor-ng9.js",
+  "esm5": "dist/esm5/ace-editor-ng9.js",
+  "esm2015": "dist/esm2015/ace-editor-ng9.js",
+  "fesm5": "dist/fesm5/ace-editor-ng9.js",
+  "fesm2015": "dist/fesm2015/ace-editor-ng9.js",
+  "typings": "dist/ace-editor-ng9.d.ts",
   "devDependencies": {
-    "@angular/cli": "^9.0.2",
-    "@angular/common": "^9.0.1",
-    "@angular/compiler": "^9.0.1",
-    "@angular/compiler-cli": "^9.0.1",
-    "@angular/core": "^9.0.1",
-    "@angular/forms": "^9.0.1",
-    "@angular/platform-browser": "^9.0.1",
-    "codelyzer": "^5.2.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^1.31.0",
-    "rollup-plugin-angular": "^0.5.3",
-    "rollup-plugin-typescript2": "^0.26.0",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-commonjs": "7.0.2",
-    "rollup-plugin-node-resolve": "2.0.0",
-    "rxjs": "^6.5.4",
-    "typescript": "^3.2.2",
-    "uglify-js": "^3.7.7",
-    "zone.js": "~0.10.2"
+    "@angular/cli": "9.1.10",
+    "@angular/common": "9.1.11",
+    "@angular/compiler": "9.1.11",
+    "@angular/compiler-cli": "9.1.11",
+    "@angular/core": "9.1.11",
+    "@angular/forms": "9.1.11",
+    "@angular/platform-browser": "9.1.11",
+    "ng-packagr": "9.1.5",
+    "rimraf": "3.0.2",
+    "rxjs": "^6.5.3",
+    "typescript": "3.8.3",
+    "brace": "^0.11.1",
+    "zone.js": "~0.10.3"
   },
-  "files": [
-    "dist/"
-  ],
-  "dependencies": {
+  "peerDependencies": {
+    "@angular/common": "9.1.11",
+    "@angular/core": "9.1.11",
+    "@angular/forms": "9.1.11",
+    "@angular/platform-browser": "9.1.11",
+    "rxjs": "^6.5.3",
     "brace": "^0.11.1"
   },
-  "main": "rollup.config.js",
   "directories": {
     "doc": "docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinpagesaal/ngx-ace-editor-wrapper.git"
+    "url": "git+https://github.com/tavwizard/ace-editor-ng9.git"
   },
   "keywords": [
     "ace",
     "angular",
     "A9"
   ],
-  "author": "Martin Page",
+  "author": "Andrei Tumilovich",
   "bugs": {
-    "url": "https://github.com/martinpagesaal/ngx-ace-editor-wrapper/issues"
+    "url": "https://github.com/tavwizard/ace-editor-ng9/issues"
   }
 }
